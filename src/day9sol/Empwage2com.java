@@ -2,10 +2,10 @@ package day9sol;
 
 import java.util.Random;
 
-public class Wcemp {
-	public void empcompany1() {
-	
-		int emphr=0;int totalwage=0;
+public class Empwage2com {
+	public void empcomp2() {
+		
+int emphr=0;int totalwage=0;
 		
 	
 	System.out.println("welcome to employee");
@@ -53,6 +53,6 @@ public class Wcemp {
 }
 	int totalempwage=totalemphrs*wageperhr;
     System.out.println("total emp wage is"+totalempwage);
-	}
+}
 }
 
