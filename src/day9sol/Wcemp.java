@@ -22,8 +22,12 @@ public class Wcemp {
 	}else {
 		System.out.println("emp not present");}
 	int noofworkingdays=20;
-	for(int day=0;day<noofworkingdays;day++)
+	int noofhrsinmonth=100;
+	int totalemphrs=0;int emphrs=0;int workingdays=0;
+	//for(int day=0;day<noofworkingdays;day++)
+	while(totalemphrs<=noofhrsinmonth && workingdays<=noofworkingdays)
 	{
+	workingdays++;
 
 	switch(ran1)
 	{
@@ -40,11 +44,13 @@ public class Wcemp {
 		
 	
 	}
-	int empwage=wageperhr*emphr;
-	  totalwage +=empwage;
-	  System.out.println("emp wage is"+empwage);
+	//int empwage=wageperhr*emphr;
+	totalemphrs+=emphr;
+	  //totalwage +=empwage;
+	  System.out.println("days is:"+workingdays+"emp hrs is :"+emphr);
 
 }
-    System.out.println("total emp wage is"+totalwage);
+	int totalempwage=totalemphrs*wageperhr;
+    System.out.println("total emp wage is"+totalempwage);
 }
 }
