@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Wcemp {
 	public static void main(String[] args) {
+		int emphr=0;int totalwage=0;
 		
 	
 	System.out.println("welcome to employee");
@@ -20,8 +21,30 @@ public class Wcemp {
 		System.out.println("emp present for parttime");
 	}else {
 		System.out.println("emp not present");}
+	int noofworkingdays=20;
+	for(int day=0;day<noofworkingdays;day++)
+	{
+
+	switch(ran1)
+	{
+	case 1:
+		System.out.println("emp not present for full day");
+		 emphr=8;
+		break;
+	case 2:
+		System.out.println("emp present for parttime");
+		emphr=8;
+		break;
+	case 3:
+		System.out.println("emp not present ");
+		
 	
 	}
-	
+	int empwage=wageperhr*emphr;
+	  totalwage +=empwage;
+	  System.out.println("emp wage is"+empwage);
 
+}
+    System.out.println("total emp wage is"+totalwage);
+}
 }
